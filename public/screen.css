@@ -1,5 +1,7 @@
 :root {
-  font: 16px / 1 sans-serif;
+  font: 16px / 1;
+  font-family: verdana, arial, sans-serif;
+  color: #333333;
 }
 
 html {
@@ -7,6 +9,74 @@ html {
 }
 
 body {
+  display: flex;
+  flex-flow: row wrap;
   margin: 0;
   min-height: 100%;
+}
+
+p a {
+  text-decoration: none;
+  color: #333333;
+}
+p a:hover {
+  text-decoration: none;
+  color: #333333;
+}
+
+p {
+  text-align: justify;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.header-aside {
+  background-color: #cdabdb;
+  padding-left: 1rem;
+  font-weight: bold;
+}
+
+.img-fluid {
+  align-content: center;
+}
+
+@media (max-width: 640px) {
+  body {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  p a {
+    text-decoration: none;
+    color: #333333;
+  }
+  p a:hover {
+    text-decoration: none;
+    color: #333333;
+  }
+  p {
+    font-size: 0.9rem;
+    text-align: justify;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .header-aside {
+    background-color: #cdabdb;
+    padding-left: 1rem;
+    font-weight: bold;
+  }
+
+  .img-fluid {
+    align-content: center;
+  }
 }
