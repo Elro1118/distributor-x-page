@@ -42,7 +42,7 @@ footer {
 }
 
 .img-fluid {
-  align-content: center;
+  min-width: 100%;
 }
 
 @media (max-width: 640px) {
@@ -50,6 +50,7 @@ footer {
     display: flex;
     flex-flow: column wrap;
   }
+
   p a {
     text-decoration: none;
     color: #333333;
